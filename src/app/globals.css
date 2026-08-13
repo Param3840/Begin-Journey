@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sekuya&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-warm: #F6F3EE;
+  --text-primary: #171717;
+  --text-muted: #737373;
+  --font-inter: 'Inter', sans-serif;
+  --font-serif: 'Source Serif 4', serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-lavishly: 'Lavishly Yours', cursive;
+  --font-sekuya: 'Sekuya', system-ui;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: var(--bg-warm);
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #171717;
+  color: #F6F3EE;
+}
+
+/* Typography Utility Classes */
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-serif-4-regular {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-italic {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.playfair-display-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* PROTECTED BRAND TYPOGRAPHY LOCK — DO NOT OVERRIDE */
+.begin-journey-title {
+  font-family: "Lavishly Yours", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.begin-journey-subtitle {
+  font-family: "Sekuya", system-ui !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}

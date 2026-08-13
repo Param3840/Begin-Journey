@@ -1,0 +1,211 @@
+.footer-section {
+  background-color: #E5E1D8;
+  border-top: 1px solid rgba(23, 23, 23, 0.08);
+  padding: 5rem 1.5rem 3rem 1.5rem;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main 4-Column Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr 0.8fr;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Brand Column */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #525252;
+  margin-bottom: 1.5rem;
+  max-width: 22rem;
+}
+
+.footer-serif-quote {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #171717;
+}
+
+/* Navigation & Contact Column Headers */
+.footer-col-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #171717;
+  margin-bottom: 1.25rem;
+}
+
+/* Links List */
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.90625rem;
+  color: #525252;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-link:hover {
+  color: #171717;
+  transform: translateX(3px);
+}
+
+/* Contact List */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.footer-contact-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #737373;
+}
+
+.footer-contact-val {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #171717;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-contact-val:hover {
+  color: #000;
+}
+
+/* Back to Top Neumorphic Button */
+.back-to-top-btn {
+  background-color: #E5E1D8;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.06), -4px -4px 12px rgba(255, 255, 255, 0.85);
+  color: #171717;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+  margin-bottom: 1.5rem;
+}
+
+.back-to-top-btn:hover {
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.09), -6px -6px 16px rgba(255, 255, 255, 0.95);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.back-to-top-btn:active {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.08), inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+  transform: translateY(0);
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom-bar {
+  border-top: 1px solid rgba(23, 23, 23, 0.08);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8125rem;
+  color: #737373;
+}
+
+.footer-credit-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8125rem;
+  color: #171717;
+  font-weight: 500;
+}
+
+.footer-credit-text span {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-section {
+    padding: 4rem 1.25rem 2.5rem 1.25rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
