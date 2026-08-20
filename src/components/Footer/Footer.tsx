@@ -159,7 +159,7 @@ export const Footer: React.FC = () => {
           </p>
 
           <p className="footer-credit-text">
-            Built with care by <span>Paramveer</span> & <span>Sheetal</span>.
+            Built with care by <span>Paramveer</span>.
           </p>
         </div>
 

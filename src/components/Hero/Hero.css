@@ -114,6 +114,39 @@
   transform: scale(1.06);
 }
 
+/* Bottom Right Price Details Button */
+.hero-bottom-right-price-btn {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 3rem;
+  z-index: 10;
+  background-color: #EDEAE4;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.07), -6px -6px 16px rgba(255, 255, 255, 0.9);
+  color: #171717;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.85rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-bottom-right-price-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1), -8px -8px 20px rgba(255, 255, 255, 0.95);
+  color: #a81b83;
+}
+
+.hero-bottom-right-price-btn:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1), inset -3px -3px 6px rgba(255, 255, 255, 0.95);
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .hero-bottom-left-logo {
     bottom: 1.5rem;
@@ -121,6 +154,12 @@
   }
   .hero-logo-img {
     height: 64px;
+  }
+  .hero-bottom-right-price-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.7rem 1.25rem;
+    font-size: 0.8125rem;
   }
 }
 

@@ -36,7 +36,7 @@ export const AboutWork: React.FC = () => {
           {/* Body Content */}
           <div className="about-work-body">
             <p className="about-work-p inter-regular">
-              Begin Journey is a small digital studio founded by Paramveer and Sheetal. We create thoughtful websites, WhatsApp automation and digital systems that help businesses connect with their customers and work smarter.
+              Begin Journey is a small digital studio founded by Paramveer. We create thoughtful websites, WhatsApp automation and digital systems that help businesses connect with their customers and work smarter.
             </p>
             <p className="about-work-p inter-regular">
               We believe good technology should feel simple — beautifully designed on the outside and genuinely useful underneath.

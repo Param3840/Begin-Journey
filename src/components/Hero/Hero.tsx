@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Tag } from "lucide-react";
+import { PricingModal } from "@/components/PricingModal/PricingModal";
 import "./Hero.css";
 
 import logoImg from "@/public/logo.png";
@@ -42,6 +43,8 @@ const letterVariants = {
 };
 
 export const Hero: React.FC = () => {
+  const [isPriceModalOpen, setIsPriceModalOpen] = useState<boolean>(false);
+
   return (
     <section id="home" className="hero-section">
       <div className="hero-content">
@@ -83,7 +86,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.7, delay: 1.25, ease: [0.16, 1, 0.3, 1] }}
           className="hero-subtitle begin-journey-subtitle sekuya-regular"
         >
-          with Paramveer and Sheetal
+          with Paramveer
         </motion.p>
 
         {/* CTA Button */}
@@ -112,6 +115,25 @@ export const Hero: React.FC = () => {
           className="hero-logo-img"
         />
       </motion.div>
+
+      {/* Bottom Right Price Details Button */}
+      <motion.button
+        initial={{ opacity: 0, scale: 0.9, y: 10 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
+        onClick={() => setIsPriceModalOpen(true)}
+        className="hero-bottom-right-price-btn"
+        aria-label="View Price Details"
+      >
+        <Tag size={16} />
+        <span>Price Details</span>
+      </motion.button>
+
+      {/* Pricing Modal Screen */}
+      <PricingModal
+        isOpen={isPriceModalOpen}
+        onClose={() => setIsPriceModalOpen(false)}
+      />
 
       <div className="hero-bottom-spacer" />
     </section>
