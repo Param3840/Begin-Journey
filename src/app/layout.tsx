@@ -8,7 +8,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://beginjourney.vercel.app"),
+  metadataBase: new URL("https://begin-journey.vercel.app"),
   title: {
     default: "Begin Journey — Web Development & Digital Automation Studio by Paramveer",
     template: "%s | Begin Journey",
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://beginjourney.vercel.app",
+    canonical: "https://begin-journey.vercel.app",
   },
   openGraph: {
     title: "Begin Journey — Custom Web Development & Digital Automation by Paramveer",
     description:
       "Designing and building custom websites, web platforms, and WhatsApp business automation solutions for growing businesses.",
-    url: "https://beginjourney.vercel.app",
+    url: "https://begin-journey.vercel.app",
     siteName: "Begin Journey",
     images: [
       {
@@ -84,9 +84,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Begin Journey",
-    url: "https://beginjourney.vercel.app",
-    logo: "https://beginjourney.vercel.app/logo.png",
-    image: "https://beginjourney.vercel.app/logo.png",
+    url: "https://begin-journey.vercel.app",
+    logo: "https://begin-journey.vercel.app/logo.png",
+    image: "https://begin-journey.vercel.app/logo.png",
     description:
       "Begin Journey is a premier web development and digital automation studio by Paramveer. We create thoughtful websites, WhatsApp automation, and digital systems.",
     founder: {
